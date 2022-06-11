@@ -1,4 +1,111 @@
-h2 {
-    background-color: blue;
-    color: white;
+body {
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 900px;
+    font-family: 'Roboto';
 }
+
+
+header {
+    display: flex;
+    justify-content: space-between;  
+    height: 2rem;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+
+
+nav ul li{
+    display: inline;
+    margin: 0.5rem 0.5rem;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.about-container {
+    display: flex;
+    padding: 1.5rem 0;
+}
+
+.about-text-container h2, p {
+    margin-right: 0.5rem;
+   
+}
+
+.about-text-container h2 {
+    margin-top: 0;
+}
+
+.portrait {
+    width: 300px;
+    border-radius: 12px;
+}
+
+.project img {
+    max-width: 900px;
+    padding: 0.5rem 0;
+}
+
+details {
+    cursor: pointer;
+    display: block;
+    padding: 0.5rem 0;
+
+
+}
+
+.project-title {
+    list-style-type: disclosure-open;
+    display: list-item;
+    counter-increment: list-item 0;
+    list-style: inside disclosure-closed; 
+}
+
+.project-title h3 {
+    display: inline;
+}
+
+.skills-container {
+    display: inline-block;
+}
+.skill-logo {
+    width: 50px;
+    height: 50px;
+    padding: 0 0.5rem;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 720px) { 
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .about-container img {
+        order: -1;
+    }
+
+}
+
+
+
+
+
+
+

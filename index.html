@@ -1,12 +1,87 @@
 <!DOCTYPE html>
+<html>
 <head>
     <link href="./resources/CSS/style.css" type="text/css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Denis Abramov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <h2>Denis Abramov</h2>
-        <script src="./resources/JS/script.js"></script>
-    </nav>
+    <header>
+        <div class = "name">
+            <h2>Denis Abramov</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <section id = "about">
+        
+        <div class = "about-container">
+            <div class = "about-text-container">
+                
+                <h2>About Me</h2>
+
+                <p>Hi! I'm Denis. I have solid background in construction engineering, management and finance. Recently I decided to switch my career to IT and now I am exploring basics and  features of the front-end development.</p>
+                <p>I have built several small websites that you can check out below in the "Projects" section.</p>
+                <p>Fun fact! I have been programming for <strong><span id="time-container"></span></strong>
+                    <script>
+
+                        const firstDate = new Date("Mar 14, 2022 15:37:25");
+
+                        let today = new Date();
+
+                        let timing = today - firstDate;
+
+                        var days = Math.floor(timing / (1000 * 60 * 60 * 24));
+
+                        document.getElementById("time-container").innerHTML = days;
+
+                        </script>
+                    days!</p>
+            </div>
+            <img src="./resources/Media/IMG_0831.jpeg" class="portrait">
+        </div>
+        
+    </section>
+    <section id = "projects">
+        <h2>Projects</h2>
+        <details class="project">
+            <summary class="project-title">
+                <h3>Adventure Polo Club</h3>
+            </summary>
+            <img src="./resources/Media/Polo.png">
+        </details>
+        <details class="project">
+            <summary class="project-title">
+                <h3>Tea Cozy Shop</h3>
+            </summary>
+            <img src="./resources/Media/teaCozy.png">
+        </details>
+        <details class="project">
+            <summary class="project-title">
+                <h3>Fotomatic</h3>
+            </summary>
+            <img src="./resources/Media/fotomatic.png">
+        </details>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class = "skills-container">
+            <img src="./resources/Media/html-5-logo-png-transparent.png" class="skill-logo">
+            <img src="./resources/Media/css_logo.png" class="skill-logo">
+            <img src="./resources/Media/javascript-logo-png-transparent.png" class="skill-logo">
+        </div>
+    </section>
 </body>
+<footer>
+    <p>Made with love and passion</p>
+</footer>
+</html>
